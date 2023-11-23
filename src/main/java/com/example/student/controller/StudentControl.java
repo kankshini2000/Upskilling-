@@ -47,6 +47,8 @@ public class StudentControl {
 		return service.getByStdId(id);
 	}
 	
+	
+	
 	@GetMapping("/name/{name}")
 	public Student findStdName(@PathVariable String name) {
 		logger.info("This method was invoked to find Std by its name");
